@@ -132,9 +132,9 @@ Socket.prototype.close = function (success, error) {
     success = success || function() { };
     error = error || function() { };
 
-    if (!this._ensureState(Socket.State.OPENED, error)) {
-        return;
-    }
+    // if (!this._ensureState(Socket.State.OPENED, error)) {
+    //     return;
+    // }
 
     this._state = Socket.State.CLOSING;
 
